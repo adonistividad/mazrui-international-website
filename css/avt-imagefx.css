@@ -1,0 +1,86 @@
+<!-- for immage effect - animated-->
+x.image-ratio{width: 100%;padding: 0;margin: 0;overflow: hidden;z-index: 1;border: none;background-color: #555;}
+x.image-ratio-container {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+
+	padding-top: 66.66%; 	/* 3:2 Aspect Ratio */
+	padding-top: 75%; 		/* 4:3 Aspect Ratio */
+	padding-top: 62.5%;		/* 8:5 Aspect Ratio */
+	padding-top: 56.25%;	/* 16:9 Aspect Ratio */
+	position: relative; /* If you want text inside of it */
+	
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+
+}
+x.image-ratio-container.hover:hover{opacity: 1; cursor:pointer;-webkit-filter: none;-moz-filter: none;-o-filter: none;-ms-filter: none;filter: none; transform: scale(1.1);-webkit-transform: scale(1.1);overflow:hidden;} 
+.grayscale {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	----filter: url(grayscale.svg); /* Firefox 4+ */
+	----filter: gray; /* IE 6-9 */
+}
+.grayscale:hover {
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none;
+	filter: none;
+	----filter: none; /* Firefox 4+ */
+	----filter: none; /* IE 6-9 */
+}
+
+
+/* Image zoom on hover + Overlay colour */
+.zoom-image-container {
+    width: 100%;
+   xmargin: 20px;
+    height: auto;
+    xborder: 1px solid blue;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+	cursor: pointer;
+}
+
+.zoom-image {
+    height: 100%;
+    width: 100%;
+	background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+ 
+
+.zoom-image-container:hover .zoom-image {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+
+/*** srcset & sizes - for website image loading efficiency [start] ***/
+[data-responsive-background-image] {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 100%;
+	padding-bottom: 56.25% /* 16:9 ratio */
+}
+
+[data-responsive-background-image] img { display: none;} 
+/*** srcset & sizes - for website image loading efficiency [end] ***/

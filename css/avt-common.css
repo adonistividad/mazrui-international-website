@@ -1,0 +1,223 @@
+<!-- common CSS -->
+body,html {width:100%;display:block;font-family: raleway;padding:0;margin:0;font-weight:300;}
+* {padding:0; margin:0;}
+#header{
+	padding-top:0;
+	background:var(--menu-bcolor);
+	-webkit-transition: all 500ms linear;
+	-ms-transition: all 500ms linear;
+	transition: all 500ms linear;
+}
+section {position:relative;}
+a {text-decoration:none;}
+
+/* #at-menu-nav a:hover {opacity:.5;} */
+
+ul {list-style: none; display: block;padding:0 5px;}
+ul.at-style-default {list-style: initial;margin-left:10px;}
+ul.at-style-inline li  {display:inline;padding:0 10px;}
+ul.at-style-check li:before {content: '✓';padding-right:10px;color:var(--color1);}
+ul.at-style-table li {padding:10px;border:.5px solid #ddd;border-bottom:none;}
+ul.at-style-table li:last-child {padding:10px;border:.5px solid #ddd;}
+
+/* x#at-menu-nav a:hover {opacity:.5;} */
+/* x#at-menu-nav li {list-style:none;display:block;} */
+
+button {cursor:pointer;} 
+
+.at-bold {font-weight:400;}
+.at-left {text-align:left;}
+.at-right {text-align:right;}
+.at-center {text-align:center;}
+.at-justify {text-align:justify;}
+
+.at-menu-sub a {color:#fff;}
+.at-menu-sub a:hover {
+	opacity: 0.6; /* Here is your opacity */
+	filter: alpha(opacity=70); /* For IE8 and earlier */
+	text-decoration:underline;
+}
+.at-menu-sub a.selected {text-decoration:underline; font-weight:400; }
+
+.at-zoom:hover {
+	transition: transform .5s; /* Animation */
+	transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.at-line-bottom::after {
+	display: block;
+	content: '';
+	background: #888;
+	height: .8px;
+	margin:80px 20px;
+	margin-bottom:0;
+}
+input, textarea, button { outline: none;} /* Remove blue border from css custom-styled button in Chrome */
+.at-button,.at-button-icon {color:var(--button-color);background:var(--button-bcolor); border: 0;padding: 14px 20px;margin: 0;font-size: 16px;border-radius: 2px;margin-top: 20px;transition: all 0.3s;}
+.at-button:hover , .at-button-icon:hover{color:var(--button-color-hover);background:var(--button-bcolor-hover); border:var(--button-border-hover); }
+
+.at-button-icon:after{ 
+   content: var(--button-icon-after);
+   font-family: FontAwesome;
+   font-weight: normal;
+   font-style: normal;
+   margin:0px 0px 0px 10px;
+   text-decoration:none;
+   font-size:24px;
+   vertical-align:middle;
+   x-webkit-text-stroke: 1px var(--color1);
+
+} 
+x.at-button-icon:hover:after{ -webkit-text-stroke: 1px var(--color2);}
+
+
+.at-underlined {position:relative;}
+.at-underlined:after,.at-underlined-full:after {
+	content: ' ';
+	position: absolute;
+	left: 50%;
+	bottom: -10px;
+	width: 100px;
+	 border: 1px solid var(--color1);
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+	transform: translateX(-50%);
+}
+.at-underlined-full:after {width: 100%;}
+.at-border-thin:after { border: .5px solid var(--color1);}
+
+.at-font-thin {-webkit-text-stroke: 6px blue;}
+
+.at-color1 {color:var(--color1);}
+.at-color2 {color:var(--color2);}
+.at-color3 {color:var(--color3);}
+
+/*********************/ 
+section .backImage, .backImage-fixed,.backImage-fixed:after  { 
+	content:'';
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	background-image: url('images/stones-1.jpg');
+	background-repeat: no-repeat; 
+	background-position: center;
+	background-size: cover;/*contain;*/
+	---opacity: 0.7; /* Here is your opacity */
+	---filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+.backImage-fixed { position: fixed; }
+section .backImage.overlay::after, .backImage-fixed.overlay::after { 
+	content:'';
+	background:var(--overlay-bcolor);
+	opacity: 0.6; /* Here is your opacity */
+	filter: alpha(opacity=70); /* For IE8 and earlier */
+	position:absolute;
+	top:0;left:0;width:100%;height:100%;
+	
+} 
+.section-content .elements {position:relative;}
+
+.act-reveal .team_social, .act-reveal:hover .team_social { 
+	display:block;
+	height: 0;
+	-webkit-transition: height 0.3s linear;
+	   -moz-transition: height 0.3s linear;
+		-ms-transition: height 0.3s linear;
+		 -o-transition: height 0.3s linear;
+			transition: height 0.3s linear;		
+}
+.act-reveal .team_social a {padding:2px;color:#aaa;}
+.act-reveal:hover div { display:none;}
+.act-reveal:hover .team_social { height: 30px;}
+
+#signup input, #signup textarea{
+	border:none;
+	border-bottom:1px #aaa solid;
+	background:none;
+	width:100%;
+	line-height:30px;
+	margin-top:15px;
+}
+#signup input:focus, #signup textarea:focus{ border-bottom:2px #aaa solid;}
+
+@media screen and (min-width: 640px) {
+	[desktop~=at-left] {text-align:left;}
+	[desktop~=at-right] {text-align:right;}
+	[desktop~=at-center] {text-align:center;}
+	[desktop~=at-justify] {text-align:justify;}
+}
+
+
+/** adjustments **/
+* {font-family:'Roboto', sans-serif;color:var(--color2);
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;}
+
+/*
+#at-menu-nav li {display:inline-block;}
+#at-menu-nav a { letter-spacing: 1px;color:var(--color2) !important;}
+#at-menu-nav a:hover , #at-menu-icon.open ~ #at-menu-nav li:hover a {opacity:1;color:var(--color1) !important;}
+
+#at-menu-icon span {color:var(--color2);}
+#at-menu-icon.open ~ #at-menu-nav a {color:var(--menu-color) !important;}
+*/
+
+/** animate - avt version **/
+@keyframes atFadeInUp {
+  from { opacity: 0; transform: translate3d(0, var(--fadePosX), 0);}
+  to {opacity: 1;transform: none;}
+}
+.at-fadeInUp { animation-name: atFadeInUp; }
+
+@keyframes atFadeInDown {
+  from {opacity: 0;
+    transform: translate3d(0, calc(var(--fadePosX) * -1) , 0);
+  }
+  to {opacity: 1;transform: none;}
+}
+
+.at-fadeInDown {
+  animation-name: atFadeInDown;
+}
+
+.iconFont i{cursor:pointer;font-size:24px;}
+ 
+ 
+/*** for modal dialog [start] ***/
+body.modal-active { overflow: hidden; } 
+.modal {position:fixed;top:0;left:0;bottom:0;right:0; color:#888; background:rgba(0,0,0,.5);overflow:scroll;font-size:14px;z-index:999;}
+.modal h2,.modal label {color:#333;}
+.modal-dialog {position:relative; width:92%; max-width:500px;margin:20px auto; background:#fafafa;}
+.modal-content, #dialog-content {padding :0 20px; }
+.modal-title {padding:15px 0;border-bottom:1px solid #ccc;text-align:center;}
+.btn-submit {color:#fff;font-size:13px;padding:15px 40px; border:1px solid  ;border-radius:5px;background:rgb(43,88,118); cursor:pointer;}
+.btn-submit:hover, .enroll-now:hover {color:#5ba0d0;}
+.modal-close {color:#fff;background:#000;position:absolute;top:-10px;
+		z-index:3; right:-10px;padding:5px; border:2px solid #fff;border-radius:50%;
+		font-size:18px; width:18px;height:18px;
+		-webkit-box-shadow: -2px 2px 16px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: -2px 2px 16px 0px rgba(0,0,0,0.75);
+		box-shadow: -2px 2px 16px 0px rgba(0,0,0,0.75);
+		text-align:center;
+		cursor:pointer;
+}
+.modal-content .sub-title {font-size:16px;font-weight:700;color:#555;}
+.modal-content .sub-title-1, .modal-content b {font-size:13px;font-weight:700;color:#555;}
+.modal ol, .modal ul { padding-left: 1em; }
+/*** for modal dialog [end] ***/
+
+
+/*** for modal dialog [start] ***/
+.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next{
+	position:absolute; color:blue; top:20px; background:rgba(200,200,200,.5); 
+	display:block; padding:5px; border-radius:20%;color: #869791;font-size: 14px;
+}
+.owl-carousel .owl-nav .owl-prev {top:var(--chevron-top);left:var(--chevron-left);}
+.owl-carousel .owl-nav .owl-next {top:var(--chevron-top);left:initial;right:var(--chevron-right);}
+
+.owl-nav .owl-prev.disabled, .owl-nav .owl-next.disabled {display: none;} /* Hide navigation for first and last item*/
+/*** for modal dialog [end] ***/
+
+.payment-icon {width:40px;}
