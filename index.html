@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>AvT Design Web Site Template</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="myicon.png">
+
+	<!-- <link type='text/css' rel='stylesheet' href='https://www.upstint.com/css/avt-flexgrid.css?v0.02'> -->
+	<!-- <link type='text/css' rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?v0.02'> -->
+	<!-- <link type='text/css' rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css?v0.02'> -->
+	<!-- <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous'></script> -->
+	<link type='text/css' rel='stylesheet' href='css/animate.min.css?v0.02'>
+	<link type='text/css' rel='stylesheet' href='css/font-awesome.min.css?v0.02'>
+	<script src='js/jquery-3.3.1.min.js'></script>
+
+
+	<link type='text/css' rel='stylesheet' href='css/owl.carousel.min.css?v0.02'>
+	<script src='js/owl.carousel.min.js?v0.02'></script>
+	<!-- <link type='text/css' rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css?v0.02'> -->
+	<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js?v0.02'></script> -->
+
+	<!-- Raleway Google fonts  -->
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,400italic,500,100italic,700'
+		rel='stylesheet' type='text/css?v0.02'>
+
+	<!-- <link type='text/css' rel='stylesheet' href='https://www.upstint.com/assets/css/avt-menu.css?v0.02'> -->
+	<!-- <link type='text/css' rel='stylesheet' href='https://www.upstint.com/assets/css/avt-imagefx.css?v0.02'> -->
+
+	<link type='text/css' rel='stylesheet' href='/assets/css/avt-flexgrid.css?v0.02'>
+	<link type='text/css' rel='stylesheet' href='/assets/css/avt-menu3.css?v0.02'>
+	<link type='text/css' rel='stylesheet' href='/assets/css/avt-imagefx.css?v0.02'>
+	<link type='text/css' rel='stylesheet' href='modal.css?v=0.01' />
+
+	<style desc='dynamic settings'>
+		:root {
+			--color0: transparent;
+			--color1: #fff;
+			--color2: #004b8d;
+			/*  rgb(56, 89, 151); */
+			--color3: #555;
+
+			--button-color: var(--color3);
+			--button-bcolor: var(--color1);
+			--button-color-hover: var(--color3);
+			--button-bcolor-hover: var(--color2);
+			--button-border-hover: var(--color1);
+
+			--overlay-bcolor: #fff;
+
+			--menu-color: var(--color2);
+			--menu-bcolor: var(--color1);
+			--menu-color-open: var(--menu-bcolor);
+			--menu-bcolor-open: var(--menu-color);
+			--menu-color-initial: var(--color2);
+			--menu-bcolor-initial: transparent;
+			--menu-fontweight: 100;
+
+			--fadePosX: 10%;
+			/*** transform: translate3d(0, var(--fadePosX), 0); ***/
+
+			--chevron-top: 100px;
+			--chevron-left: 20px;
+			--chevron-right: 20px;
+			--chevron-bcolor: var(--color1);
+		}
+	</style>
+	<!-- <link type='text/css' rel='stylesheet' href='https://www.upstint.com/assets/css/avt-common.css?v0.02'> -->
+	<link type='text/css' rel='stylesheet' href='/assets/css/avt-common.css?v0.02'>
+	<style>
+		#slide-show1 span {
+			font-size: 50px;
+		}
+
+		#slide-show1 i {
+			padding-top: 100px;
+		}
+
+		@media all and (min-width: 800px) {
+			#slide-show1 span {
+				font-size: 2.5vw;
+			}
+
+			#slide-show1 i {
+				padding-top: 0px;
+			}
+		}
+	</style>
+	<!-- <style>
+		.img-zoom-parent {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+			float: left;
+			display: inline-block;
+			cursor: pointer;
+		}
+		.img-zoom-child {
+			xheight: 100%;
+			width: 100%;
+			max-width:200px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			-webkit-transition: all .5s;
+			-moz-transition: all .5s;
+			-o-transition: all .5s;
+			transition: all .5s;
+		}	
+		.img-zoom-parent:hover .img-zoom-child, .img-zoom-parent:focus .img-zoom-child {
+			-ms-transform: scale(1.2);
+			-moz-transform: scale(1.2);
+			-webkit-transform: scale(1.2);
+			-o-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+		.img-zoom-parent:hover .img-zoom-child:before, .img-zoom-parent:focus .img-zoom-child:before { display: block;}
+		.img-zoom-child:before {content: "";display: none;height: 100%;width: 100%;position: absolute;top: 0;left: 0;background-color: rgba(200,200,200,0.6);}
+
+		.img-zoom-parent:hover .img-preview-icon:after {
+			font-family: FontAwesome;
+			content: "\f00e";
+			color:#000;
+			position:absolute;
+			top:45%;left:45%;
+			font-size:24px;
+			-webkit-text-stroke: 1px background-color;
+		} 
+	</style> -->
+</head>
+
+<body>
+	<style>
+		.modal .team-img-area img {
+			width: 100%;
+			max-width: 200px;
+			float: left;
+			padding-right: 20px;
+		}
+
+		.modal .description {
+			display: block;
+			padding-bottom: 20px;
+		}
+
+		.modal .name {
+			color: var(--color2);
+			font-size: 18px;
+			padding-top: 10px;
+		}
+
+		.modal .designation {
+			font-size: 14px;
+			padding-bottom: 10px;
+			color: #aaa;
+			font-style: italic;
+		}
+
+		.modal p {
+			color: #6e6e6e;
+			line-height: 20px;
+			padding-bottom: 30px !important;
+		}
+	</style>
+	<div class='modal'>
+		<div class='modal-dialog wide' role='document'>
+			<div class='modal-container'>
+				<div class='modal-header'>
+					<span class='fa fa-close modal-close'></span>
+					<br>
+					<!-- <h2 class='modal-title'>Open Water Scuba Diver</h2> -->
+				</div>
+				<div class='modal-content'>
+					<div class="team-img-area">
+						<img src="images/Mr-Charbel-CEO-1x1-165x166.jpg">
+						<div class='at-bold'>Charbel E. Khoury</div>
+						<div>Group CEO</div>
+						<p class="description">Charbel El Khoury is Group CEO of Mazrui International, a role that
+							enables him to use his 19 years of business and law experience to make a compelling
+							contribution to the UAE economy. Based in Abu Dhabi, Mazrui International is a diverse
+							family owned Group, with significant businesses in the energy, industrial, real estate and
+							trading sectors. Additionally, the Group manages a wide range of investments in well-known
+							enterprises across the UAE economy. Charbel guides the Group’s overall direction, growth and
+							priorities, taking the leading role in its strategy, operations, mergers and acquisitions,
+							project finance and joint ventures. Charbel gained his law experience in prominent legal
+							practices in Lebanon and the UAE before assuming the role of Chief Legal Officer at Mazrui
+							International. With commercial responsibilities crossing multiple jurisdictions and industry
+							sectors, this experience helped hone Charbel’s razor-sharp business acumen, which enables
+							him to win as Group CEO today. In addition to his responsibilities as Group CEO, Charbel
+							holds a number of board positions across international organizations including, Hilti
+							Emirates, Air Liquide, Action International, Carbon Holdings, Gulf Refining Company NV, ISO
+							Octane and Union Iron & Steel. Charbel has a Bachelor’s degree in International Law and
+							Legal Studies, and a Master’s degree in Private Law, both from Sagesse University.</p>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<section id='header' hid='1' class="selected animate-header"
+		style='position:fixed;top:0;left:0;z-index:999;width:100%;' animated='at-fadeInUp'>
+		<div class="grid">
+			<div class="section-content grid--fit" rid="1">
+				<div class="elements at-left ">
+					<div id='logo' style='font-size:18px;font-weight:800;color:#fff;padding:0 25px;'><img
+							src="images/logo.png" alt="" style='width:200px;'></div>
+				</div>
+			</div>
+			<div class="section-content" rid="2">
+				<div class="elements at-center">
+					<a id="at-menu-icon" href="#"><span></span><span></span><span></span></a>
+					<nav id="at-menu-nav" class="animated fadeIn" style='line-height:50px;'>
+						<ul>
+							<li><a class="fn-scroll" href="#">HOME</a></li>
+							<li><a class="fn-scroll" href="#about">ABOUT US</a></li>
+							<li><a class="fn-scroll" href="#sectors">OUR SECTORS</a></li>
+							<li><a class="fn-scroll" href="#careers">CAREERS</a></li>
+							<li><a class="fn-scroll" href="#contact">CONTACT US</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id='home' hid='1' class="selected">
+		<div class='backImage-fixed overlay' style="background-image: url(images/homebg.jpg);"></div>
+		<div class="grid">
+			<div class="section-content grid--full animated fadeInUp" rid="1">
+				<div class="elements at-center ">
+					<h1 class='at-bold'
+						style='color:rgb(56,89,151);font-size:36px;padding:0 10%; padding-top:240px;padding-bottom:50px;'>
+						Everything is designed. <br>
+						Few things are designed well.</h1>
+				</div><br><br><br><br>
+				<br><br><br><br>
+			</div>
+			<!--
+			<div class="section-content grid--full" rid="2">
+				<div class="elements at-center" >
+					<ul class="at-menu-sub at-style-inline">
+						<li><a class="fn-scroll" href="#">Welcome</a></li>
+						<li><a class="fn-scroll selected" href="#design" class='selected'>design</a></li>
+						<li><a class="fn-scroll" href="#develop">develop</a></li>
+						<li><a class="fn-scroll" href="#support">support</a></li>
+					</ul>
+					<a class="fn-scroll fa fa-long-arrow-down at-zoom" href="#about" style='width: 35px;height: 35px;margin:60px auto;color:#fff;border: 2px solid #fff;line-height: 35px;border-radius: 50%;'></a>
+ 
+				</div>
+			</div>
+			-->
+		</div>
+	</section>
+	<style>
+		#slide-show1 .item span {
+			margin: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			color: #fff;
+			background: rgb(56, 89, 151, .8);
+			padding-top: 55%;
+			cursor: pointer;
+		}
+
+		#slide-show1 .item span label {
+			color: #fff;
+			cursor: pointer;
+		}
+
+		#slide-show1 .item span .label-2 {
+			display: none;
+		}
+
+		#slide-show1 .item span:hover {
+			background: rgb(0, 0, 0, .8);
+		}
+
+		#slide-show1 .item span:hover .label-1 {
+			display: none;
+		}
+
+		#slide-show1 .item span:hover .label-2 {
+			display: inline;
+		}
+	</style>
+
+	<section id='product-list' hid='3' style='padding:20px;background:#f2f2f2;--chevron-top:150px;'>
+		<div id="slide-show1" class="slide-show owl-carousel owl-theme at-center">
+			<a class="item" style='position:relative;display:block;' href="#healthcare">
+				<img class="" sizes="269px" src="images/Healthcare-231x300.jpg">
+				<span> <label class="label-1"> Healthcare</label> <label class="label-2">READ MORE</label> </span>
+			</a>
+			<a class="item" href="#education">
+				<img class="" alt="Tortoise" sizes="383px" srcset="images/education-225x300.jpg">
+				<span> <label class="label-1"> Education</label> <label class="label-2">READ MORE</label> </span>
+			</a>
+			<a class="item" href="#trading">
+				<img class="" alt="Arthur" sizes="383px" srcset="images/img-2-225x300.jpg">
+				<span> <label class="label-1"> Trading</label> <label class="label-2">READ MORE</label> </span>
+			</a>
+			<a class="item" href="#energy">
+				<img class="" alt="Watts" sizes="383px" srcset="images/Oil-Gas-231x300.jpg">
+				<span> <label class="label-1"> Energy Services</label> <label class="label-2">READ MORE</label> </span>
+			</a>
+			<a class="item" href="#retail">
+				<img class="" alt="Arthur" sizes="383px" srcset="images/img-2-225x300.jpg">
+				<span> <label class="label-1"> Retail</label> <label class="label-2">READ MORE</label> </span>
+			</a>
+			<a class="item" href="#construction">
+				<img class="" alt="Manta" sizes="383px" srcset="images/Construction-Building-Materials-231x300.jpg">
+				<span> <label class="label-1"> Construction & <br>Logistics</label> <label class="label-2">READ
+						MORE</label> </span>
+			</a>
+		</div>
+	</section>
+
+	<section id='about' hid='2' style='background:#fff;padding-top:80px;'>
+		<div class="grid">
+			<div class="section-content rgrid--1-3" rid="1" animated='fadeInLeft'>
+				<div class="elements at-left" desktop='at-right' style='padding:0 20px;'>
+					<h1 class='' style='font-size:36px;margin:10px 0;color:var(--color2);'>WHO WE ARE</h1>
+				</div>
+			</div>
+			<div class="section-content rgrid--2-3" rid="2" animated='fadeInDown'>
+				<div class="elements">
+					<p class='at-bold'
+						style='color:var(--color3);border-left:1px #ccc solid;padding:0 20px;margin:0 20px;'>
+						<b>Mazrui International</b> is a privately-held diversified company that operates across
+						numerous industries and asset classes. It has grown both organically and inorganically into a
+						significant contributor to, and key player in, the UAE economy. By building long-term
+						relationships with local and international partners, we grow brands and companies and uncover
+						new business opportunities. Our companies are market leaders in several different sectors,
+						including, but not limited to Oil & Gas, Construction & Building Materials, Retail, Industrial
+						and Healthcare. All companies benefit from a world class support structure delivered through a
+						"Shared Services" model. Our industrial expertise and knowledge of local markets, combined with
+						a strong investment reputation and a committed team of professionals makes us ideal partners to
+						invest with in the region.
+					</p>
+
+				</div>
+				<br><br>
+			</div>
+
+			<div class="section-content rgrid--1-3" rid="1" animated='fadeInLeft'>
+				<div class="elements at-left" desktop='at-right' style='padding:0 20px;'>
+					<h1 class='' style='font-size:36px;margin:10px 0;color:var(--color2);'>WHAT WE DO</h1>
+				</div>
+			</div>
+			<div class="section-content rgrid--2-3" rid="2" animated='fadeInRight'>
+				<div class="elements">
+					<p class='at-bold'
+						style='color:var(--color3);border-left:1px #ccc solid;padding:0 20px;margin:0 20px;'>
+						Mazrui International will create value for its shareholders and distinguish itself as one of the
+						premier diversified companies in the region. It will do so by providing effective support to its
+						portfolio companies, being a business partner of choice, attracting, developing and retaining
+						the best talent, pursuing continuous improvement, and contributing to the social fabric of the
+						United Arab Emirates.
+					</p>
+
+				</div>
+				<br><br>
+			</div>
+			<div class="section-content rgrid--1-3" rid="1" animated='fadeInLeft'>
+				<div class="elements at-left" desktop='at-right' style='padding:0 20px;'>
+					<h1 class='' style='font-size:36px;margin:10px 0;color:var(--color2);'>GLOBAL NETWORK</h1>
+				</div>
+			</div>
+			<div class="section-content rgrid--2-3" rid="2" animated='fadeInUp'>
+				<div class="elements">
+					<p class='at-bold'
+						style='color:var(--color3);border-left:1px #ccc solid;padding:0 20px;margin:0 20px;'>
+						Business that cares. That's part of who we are. Our philosophy is to deliver value and give back
+						to the community where we belong.
+						<br><br>
+						<span>U.A.E | Iraq | Yemen | Saudi Arabia | Oman | Kuwait </span>
+						<br><br>
+						<img src="images/map.png" alt="" style='width:100%;'>
+
+				</div>
+				</p>
+			</div>
+		</div>
+
+
+		</div>
+	</section>
+
+	<!-- <section hid='3' class='at-line-bottom' style='background:#fff;padding:100px 30px;'>
+		<div class="grid" animated='fadeInUp'>
+			<div class="section-content rgrid--1-3" rid="1">
+				<div class="elements at-center" style='padding:0 10px'>
+					<i class="fn-scroll fa fa-lightbulb-o fa-2x" href="#about"
+						style='width: 60px;height: 60px;color:#ff9a5e;border: 1px solid #ff9a5e;line-height: 60px;border-radius: 50%;'></i>
+					<div class='at-bold' style='font-size:24px;color:var(--color3);padding:10px 0;'>Design</div>
+					<p style='color:var(--color3);'>Nulla consectetur, dui ut mollis dapibus, dui urna
+						blandit elit, at ornare ante dui sit amet mi.</p>
+				</div>
+			</div>
+
+			<div class="section-content rgrid--1-3" rid="2">
+				<div class="elements at-center" style='padding:0 10px'>
+					<i class="fn-scroll fa fa-toggle-off fa-2x" href="#about"
+						style='width: 60px;height: 60px;color:#ff9a5e;border: 1px solid #ff9a5e;line-height: 60px;border-radius: 50%;'></i>
+					<div class='at-bold' style='font-size:24px;color:var(--color3);padding:10px 0'>Design</div>
+					<p style='color:var(--color3);'>Nulla consectetur, dui ut mollis dapibus, dui urna
+						blandit elit, at ornare ante dui sit amet mi.</p>
+				</div>
+			</div>
+			<div class="section-content rgrid--1-3" rid="3">
+				<div class="elements at-center" style='padding:0 10px'>
+					<i class="fn-scroll fa fa-lock fa-2x" href="#about"
+						style='width: 60px;height: 60px;color:#ff9a5e;border: 1px solid #ff9a5e;line-height: 60px;border-radius: 50%;'></i>
+					<div class='at-bold' style='font-size:24px;color:var(--color3);padding:10px 0'>Design</div>
+					<p style='color:var(--color3);'>Nulla consectetur, dui ut mollis dapibus, dui urna
+						blandit elit, at ornare ante dui sit amet mi.</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	 -->
+	<section id='portfolio' hid='4' style='background:#fff;padding-top:80px;'>
+		<div class="grid" animated='fadeInUp'>
+			<div class="section-content rgrid--1-3" rid="1">
+				<div class="elements at-left" desktop='at-right' style='padding-left:20px;'>
+					<h1 class='' style='font-size:36px;margin:10px 0;color:var(--color2);'>CHAIRMAN’S MESSAGE</h1>
+					<br>
+					<img src="images/chairman_detail_pic.jpg" alt="" style='width:100%;max-width:240px;'>
+				</div>
+				<br><br>
+			</div>
+			<div class="section-content rgrid--2-3" rid="2">
+				<div class="elements">
+					<p class='at-bold'
+						style='color:var(--color3);border-left:1px #ccc solid;padding:0 20px;margin:0 20px;'>
+						What we have endeavoured to achieve through the creation of Mazrui International is to preserve
+						and promote the values of the individual companies that make up the Mazrui portfolio, and at the
+						same time realise the untapped potential of these businesses. Our presence in a number of ‘core’
+						market sectors reflects our desire to focus on areas where we believe we have a high level of
+						competence and have the ability to ‘add value’. Our clear vision and strategy for each sector is
+						trusted by our partners and customers alike, and is underpinned by the strength of our solutions
+						and our robust service offerings.<br><br>
+					</p>
+					<p class='at-bold'
+						style='color:var(--color3);border-left:1px #ccc solid;padding:0 20px;margin:0 20px;'>
+						Our commitment to continuous improvement allows us to weather changing economic and business
+						climates. We enhance our key internal operations to ensure a consistent and positive experience
+						for our customers, partners, suppliers and employees.<br><br>
+					</p>
+					<p class='at-bold'
+						style='color:var(--color3);border-left:1px #ccc solid;padding:0 20px;margin:0 20px;'>
+						As a company we remain committed to corporate and social responsibility. In all of our actions
+						we strive to ensure that economic, environmental and social factors are considered. We believe
+						that this approach, driven by our values of excellence, integrity and accountability, makes us
+						more responsible and informed as a company.<br><br>
+					</p>
+					<p class='at-bold'
+						style='color:var(--color3);border-left:1px #ccc solid;padding:0 20px;margin:0 20px;'>
+						After more than three decades of success and milestone achievements, we remain committed to be
+						leaders in all that we do, to continually innovate, and to support the social and economic
+						fabric of Abu Dhabi. As always, I am grateful to the Rulers and Government of Abu Dhabi for
+						their confidence and support of Mazrui International and look to the future with excitement and
+						optimism.
+						<br><br>
+						<span style="font-size:20px;color:var(--color2) !important;">Abdullah M. Mazrui</span>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<style>
+		#management .description {
+			display: none;
+		}
+
+		#management .management {
+			cursor: pointer;
+		}
+
+		#management .management .name {
+			color: #444;
+			font-weight: 600;
+			padding: 10px;
+		}
+
+		#management .management img {
+			width: 100%;
+			max-width: 300px;
+		}
+	</style>
+	<section id="management" hid='11' style='background:#fff;'>
+		<br><br><br>
+		<div class="grid" animated='fadeInDown'>
+			<div class="section-content grid--full" rid="1">
+				<div class="elements at-center">
+					<h1 class='' style='color:var(--color2);font-size:36px;margin:10px 0;'>MANAGEMENT TEAM</h1>
+				</div>
+			</div>
+			<div class="section-content rgrid--1-4 at-center" rid="1">
+				<div class="elements act-reveal" style='padding:20px;'>
+					<div class="team_social">
+						<a href="" class="fa fa-linkedin"></a>
+						<a href="" class="fa fa-google-plus"></a>
+					</div>
+					<a class="management">
+						<img src="images/Mr-Charbel-CEO-1x1-165x166.jpg">
+						<div class='name at-bold'>Charbel E. Khoury</div>
+						<div class='designation'>Group CEO</div>
+						<p class="description">Charbel El Khoury is Group CEO of Mazrui International, a role that
+							enables him to use his 19 years of business and law experience to make a compelling
+							contribution to the UAE economy. Based in Abu Dhabi, Mazrui International is a diverse
+							family owned Group, with significant businesses in the energy, industrial, real estate and
+							trading sectors. Additionally, the Group manages a wide range of investments in well-known
+							enterprises across the UAE economy. Charbel guides the Group’s overall direction, growth and
+							priorities, taking the leading role in its strategy, operations, mergers and acquisitions,
+							project finance and joint ventures. Charbel gained his law experience in prominent legal
+							practices in Lebanon and the UAE before assuming the role of Chief Legal Officer at Mazrui
+							International. With commercial responsibilities crossing multiple jurisdictions and industry
+							sectors, this experience helped hone Charbel’s razor-sharp business acumen, which enables
+							him to win as Group CEO today. In addition to his responsibilities as Group CEO, Charbel
+							holds a number of board positions across international organizations including, Hilti
+							Emirates, Air Liquide, Action International, Carbon Holdings, Gulf Refining Company NV, ISO
+							Octane and Union Iron & Steel. Charbel has a Bachelor’s degree in International Law and
+							Legal Studies, and a Master’s degree in Private Law, both from Sagesse University.</p>
+					</a>
+				</div>
+			</div>
+			<div class="section-content rgrid--1-4 at-center" rid="2">
+				<div class="elements act-reveal" style='padding:20px;'>
+					<div class="team_social">
+						<a href="" class="fa fa-linkedin"></a>
+						<a href="" class="fa fa-google-plus"></a>
+					</div>
+					<a class="management">
+						<img src="images/Martin-Pearson-MINT-COO-165x166.jpg">
+						<div class='name at-bold'>Martin Pearson</div>
+						<div class='designation'>Chief Operating Officer</div>
+						<p class="description">Drawing on more than 25 years of professional experience working for both
+							privately owned and publicly quoted companies, Martin works with the CEO helping guide the
+							Group’s overall direction, growth and strategic priorities. He is responsible for Mazrui
+							Group operations providing strategic leadership to Shared Services Departments including
+							Information Technology [IT], Human Resources, Government Relations and Marketing and
+							Communications. Martin’s multi-faceted career includes sales, commercial and operational
+							roles within a number of industry sectors including oil and gas, professional services,
+							recruitment, information technology/telecommunications and leisure. He graduated with a
+							Joint Honours Bachelor’s Degree in Economics and Agricultural Economics from Nottingham
+							University [UK] and, thereafter, qualified as a Chartered Accountant with Price Waterhouse.
+						</p>
+					</a>
+				</div>
+			</div>
+			<div class="section-content rgrid--1-4 at-center" rid="3">
+				<div class="elements act-reveal" style='padding:20px;'>
+					<div class="team_social">
+						<a href="" class="fa fa-linkedin"></a>
+						<a href="" class="fa fa-google-plus"></a>
+					</div>
+					<a class="management">
+						<img src="images/Mr-Joe-1x1-165x166.jpg">
+						<div class='name at-bold'>Joe Ioculano</div>
+						<div class='designation'>Chief Risk Officer</div>
+						<p class="description">
+							Joe is responsible for Strategic Risk Management, Internal Audit, Compliance, and other
+							Corporate Governance related matters. Before joining Mazrui, Joe held various executive
+							responsibilities with global multinationals across Europe, Asia and the Middle East in
+							positions including Head of Strategic Initiatives, Head of Internal Audit and Chief
+							Information Officer with NYSE and LSE listed companies. Joe has also served on various
+							Audit, Risk and Compliance committees. Joe is an Australian Chartered Accountant and a
+							Bachelor of Business from the Royal Melbourne Institute of Technology.
+						</p>
+					</a>
+				</div>
+			</div>
+			<div class="section-content rgrid--1-4 at-center" rid="4">
+				<div class="elements act-reveal" style='padding:20px;'>
+					<div class="team_social">
+						<a href="" class="fa fa-linkedin"></a>
+						<a href="" class="fa fa-google-plus"></a>
+					</div>
+					<a class="management">
+						<img src="images/Danile-Ragette-MINT-CFO-165x166.jpg">
+						<div class='name at-bold'>Daniel Ragette</div>
+						<div class='designation'>Chief Financial Officer</div>
+						<p class="description">
+							Drawing on more than 25 years of professional experience in Finance, Investment Banking and
+							Consulting within multinational environments, Daniel is responsible for the financial
+							activities of the Mazrui Group including financial reporting and management, forward
+							planning, and treasury activities. He has worked in numerous emerging markets and in
+							multifaceted industries for international names including NIKE Levant, SMLC SAL / Pepsi Co,
+							Middle East Capital Group, ABB Germany, Treuhandanstalt and Mc Kinsey & Co. Germany. He
+							graduated with a Master’s degree in Business Administration [Finance] and Mechanical
+							Engineering from the Technical University of Berlin, Germany.
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id='service' hid='6' style='background:#fff;padding:50px;padding-top:80px;'>
+		<div class="section-content grid--full" rid="1">
+			<div class="elements at-center">
+				<h1 class='' style='color:var(--color2);font-size:36px;margin:10px 0;'>MAZRUI GROUP STRATEGIC FRAMEWORK
+				</h1>
+			</div>
+		</div>
+	</section>
+	<section id='design' hid='7' style='background:#fff;padding:20px 0;'>
+		<div class="grid" animated='fadeInUp'>
+			<div class="section-content rgrid--1-2" rid="1">
+				<div class="elements at-center">
+					<img src="images/purpose.png" alt="" style='width:100%;max-width:300px'>
+				</div>
+			</div>
+			<div class="section-content rgrid--1-2" rid="2">
+				<div class="elements" style='padding:0 50px;'>
+					<div class='at-bold' style='padding-bottom:20px;color:var(--color3);font-size:30px;'>Purpose</div>
+					<p style='color:var(--color3);'>
+						We are a family owned business with a purpose of creating long term value and ensuring financial
+						sustainability for future generations.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id='develop' hid='8' style='background:#fff;padding:20px 0;'>
+		<div class="grid" animated='fadeInUp'>
+			<div class="section-content rgrid--1-2" rid="2">
+				<div class="elements" style='padding:0 50px;'>
+					<div class='at-bold' style='padding-bottom:20px;color:var(--color3);font-size:30px;'>Vision</div>
+					<p style='color:var(--color3);'>
+						To become a world-class operating family-owned conglomerate renowned for establishing strong
+						partnerships with local and global companies
+					</p>
+				</div>
+			</div>
+			<div class="section-content rgrid--1-2" rid="1">
+				<div class="elements at-center">
+					<img src="images/vision.jpg" alt="" style='width:100%;max-width:360px'>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id='support' hid='9' style='background:#fff;padding:20px 0;'>
+		<div class="grid" animated='fadeInUp'>
+			<div class="section-content rgrid--1-2" rid="1">
+				<div class="elements at-center">
+					<img src="images/mission.jpg" alt="" style='width:90%;max-width:300px'>
+				</div>
+			</div>
+			<div class="section-content rgrid--1-2" rid="2">
+				<div class="elements" style='padding:0 50px;'>
+					<div class='at-bold' style='padding-bottom:10px;color:var(--color3);font-size:30px;'>Mission</div>
+					<p style='color:var(--color3);'>
+						To operate a diversified “best-in-class” portfolio of businesses by growing organically,
+						acquiring new businesses and establishing strategic long-term partnerships.
+					</p>
+				</div>
+			</div>
+		</div>
+		<br><br>
+	</section>
+	<section id='values' hid='10' style='background:#fff;padding:20px 0;'>
+		<div class="grid" animated='fadeInUp'>
+			<div class="section-content rgrid--1-3" rid="1">
+				<div class="elements at-left" desktop='at-right' style='padding-left:20px;'>
+					<h1 class='' style='font-size:36px;margin:10px 0;color:var(--color3);'>Core Values</h1>
+				</div>
+			</div>
+			<div class="section-content rgrid--2-3" rid="2">
+				<div class="elements">
+					<p class='at-bold'
+						style='color:var(--color3);border-left:1px #ccc solid;padding:0 20px;margin:0 20px;'>
+						<b>Diverse:</b><br>
+						We operate diverse business across 6 sectors, employing people from different backgrounds and
+						nationalities 53 nationalities
+						<br><br><b>Goal Oriented:</b><br>
+						We base our business decisions upon carefully considered operating and financial metrics.
+						<br><br><b>Trustworthy:</b><br>
+						We build strategic, long-term relationships and alliances based on trust with reputable partners
+						of choice to create enduring value.
+						<br><br><b>Ethical:</b><br>
+						We uphold high ethical standards and treat all our partners and employees with utmost respect.
+						<br><br><b>Socially Responsible:</b><br>
+						We are committed to becoming corporate citizens in our own local community.
+						<br><br>
+					</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div id='sectors' style="padding-top:20px;" </div> </section> <div id='energy'></div>
+		<section hid='6' style='background:#fff;padding:50px;padding-top:10px;'>
+			<div class="section-content grid--full" rid="1">
+				<div class="elements at-center">
+					<h1 class='' style='color:var(--color2);font-size:36px;margin:10px 0;'>OUR SECTORS</h1>
+					<!-- <p style='color:var(--color3);'>Since the seventies, MAZRUI International has helped create clarity and
+					covetability for businesses and brands through its retail and distribution divisions. This family
+					run group responds to each new alliance with a keen understanding of business objectives, providing
+					partners with a unique Middle Eastern perspective, agile thinking and brand management excellence.
+				</p> -->
+				</div>
+
+			</div>
+		</section>
+		<section hid='10' style='background:#fff;'>
+			<div class="grid" animated='fadeInUp'>
+				<div class="section-content rgrid--1-3" rid="1">
+					<div class="elements at-left" desktop='at-right' style='padding-left:20px;'>
+						<h1 class='' style='font-size:36px;margin:10px 0;color:var(--color3);'>Energy Services</h1>
+					</div>
+				</div>
+				<div class="section-content rgrid--2-3" rid="2">
+					<div class="elements">
+						<p class='at-bold'
+							style='color:var(--color3);border-left:1px #ccc solid;padding:0 20px;margin:0 20px;'>
+							Mazrui International has been an active investor in the Energy sector since 1978,
+							concentrating
+							on companies supporting oil well drilling and oil extraction activities. These portfolio
+							companies provide services such as Oilfield Equipment trading, manufacture and maintenance,
+							Drilling Services and Inspection Services.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section hid="5" style="background:#fff;padding:0 50px;">
+			<div class="grid animated fadeInUp" animated="fadeInUp">
+				<div class="section-content rgrid--1-3" rid="1"  animated='fadeInLeft'>
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/MES.png);padding-top:100%;width:100%"></div> -->
+						<img src="images/MES.png" style="width:100%;">
+					</div>
+				</div>
+				<div class="section-content rgrid--1-3" rid="2" animated='fadeInDown'>
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/pf13.jpg);padding-top:100%;"></div> -->
+						<img src="images/SIGMA-Enterprises-300x120.png" style="width:100%;">
+					</div>
+				</div>
+				<div class="section-content rgrid--1-3" rid="3" animated='fadeInRight'>
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/pf15.jpg);padding-top:100%;"></div> -->
+						<img src="images/PPC-300x120.png" style="width:100%;">
+					</div>
+				</div>
+				<div class="section-content rgrid--1-3" rid="4" animated='fadeInLeft'>
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/pf21.jpg);padding-top:100%;"></div> -->
+						<img src="images/SEW-300x120.png" style="width:100%;">
+					</div>
+				</div>
+				<div class="section-content rgrid--1-3" rid="4">
+					<div class="elements img-zoom-parent">
+						<img src="images/SSI-300x120.png" style="width:100%;" animated='fadeInUp'>
+					</div>
+				</div>
+				<div class="section-content rgrid--1-3" rid="4">
+					<div class="elements img-zoom-parent">
+						<img src="images/SIC.png" style="width:100%;" animated='fadeInRight'>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id='retail' hid='10' style='background:#fff;padding-top:100px;'>
+			<div class="grid" animated='fadeInUp'>
+				<div class="section-content rgrid--1-3" rid="1">
+					<div class="elements at-left" desktop='at-right' style='padding-left:20px;'>
+						<h1 class='' style='font-size:36px;margin:10px 0;color:var(--color3);'>Retail</h1>
+					</div>
+				</div>
+				<div class="section-content rgrid--2-3" rid="2">
+					<div class="elements">
+						<p class='at-bold'
+							style='color:var(--color3);border-left:1px #ccc solid;padding:0 20px;margin:0 20px;'>
+							Since the seventies, MAZRUI International has helped create clarity and covetability for
+							businesses and brands through its retail and distribution divisions. This family run group
+							responds to each new alliance with a keen understanding of business objectives, providing
+							partners with a unique Middle Eastern perspective, agile thinking and brand management
+							excellence.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section hid="5" style="background:#fff;padding:0 50px;">
+			<div class="grid animated fadeInUp" animated="fadeInUp">
+				<div class="section-content rgrid--1-3" rid="1">
+					<div class="elements img-zoom-parent" animated='fadeInLeft'>
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/MES.png);padding-top:100%;width:100%"></div> -->
+						<img src="images/HARMONY.png" style="width:100%;">
+					</div>
+				</div>
+				<div class="section-content rgrid--1-3" rid="2">
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/pf13.jpg);padding-top:100%;"></div> -->
+						<img src="images/ELDIAR.png" style="width:100%;" animated='fadeInDown'>
+					</div>
+				</div>
+				<div class="section-content rgrid--1-3" rid="3">
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/pf15.jpg);padding-top:100%;"></div> -->
+						<img src="images/SHF-Logo.png" style="width:100%;" animated='fadeInRight'>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id='construction' hid='10' style='background:#fff;padding-top:100px;'>
+			<div class="grid" animated='fadeInUp'>
+				<div class="section-content rgrid--1-3" rid="1">
+					<div class="elements at-left" desktop='at-right' style='padding-left:20px;'>
+						<h1 class='' style='font-size:36px;margin:10px 0;color:var(--color3);'>Construction & Logistics
+						</h1>
+					</div>
+				</div>
+				<div class="section-content rgrid--2-3" rid="2">
+					<div class="elements">
+						<p class='at-bold'
+							style='color:var(--color3);border-left:1px #ccc solid;padding:0 20px;margin:0 20px;'>
+							Mazrui International has developed a diverse portfolio of companies to offer niche
+							capabilities
+							across the entire spectrum of construction activities. These capabilities range from supply
+							of
+							construction tools and equipment, to the execution of large turn-key construction contracts.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section hid="5" style="background:#fff;padding:0 50px;">
+			<div class="grid animated fadeInUp" animated="fadeInUp">
+				<div class="section-content rgrid--1-3" rid="1">
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/MES.png);padding-top:100%;width:100%"></div> -->
+						<img src="images/Transafe-300x120.png" style="width:100%;" animated='fadeInLeft'>
+					</div>
+				</div>
+				<div class="section-content rgrid--1-3" rid="2">
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/pf13.jpg);padding-top:100%;"></div> -->
+						<img src="images/AST_Logo-300x120.png" style="width:100%;" animated='fadeInDown'>
+					</div>
+				</div>
+				<div class="section-content rgrid--1-3" rid="3">
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/pf15.jpg);padding-top:100%;"></div> -->
+						<img src="images/Action_Logo-1-300x120.png" style="width:100%;" animated='fadeInRight'>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id='healthcare' hid='10' style='background:#fff;padding-top:100px;'>
+			<div class="grid" animated='fadeInUp'>
+				<div class="section-content rgrid--1-3" rid="1">
+					<div class="elements at-left" desktop='at-right' style='padding-left:20px;'>
+						<h1 class='' style='font-size:36px;margin:10px 0;color:var(--color3);'>Healthcare</h1>
+					</div>
+				</div>
+				<div class="section-content rgrid--2-3" rid="2">
+					<div class="elements">
+						<p class='at-bold'
+							style='color:var(--color3);border-left:1px #ccc solid;padding:0 20px;margin:0 20px;'>
+							Mazrui International has been present in the UAE healthcare sector for more than 10 years
+							and is
+							looking to expand its investment in this industry of vital importance to the UAE. Mazrui
+							International currently operates in the medical distribution market specializing in
+							pharmaceutical products, medical devices and veterinary products.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section hid="5" style="background:#fff;padding:0 50px;">
+			<div class="grid animated fadeInUp" animated="fadeInUp">
+				<div class="section-content rgrid--1-3" rid="1">
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/MES.png);padding-top:100%;width:100%"></div> -->
+						<img src="images/CarboneClinic_Logo-300x120.png" style="width:100%;" animated='fadeInLeft'>
+					</div>
+				</div>
+				<div class="section-content rgrid--1-3" rid="2">
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/pf13.jpg);padding-top:100%;"></div> -->
+						<img src="images/METROMED-300x120.png" style="width:100%;" animated='fadeInDown'>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id='education' hid='10' style='background:#fff;padding-top:100px;'>
+			<div class="grid" animated='fadeInUp'>
+				<div class="section-content rgrid--1-3" rid="1">
+					<div class="elements at-left" desktop='at-right' style='padding-left:20px;'>
+						<h1 class='' style='font-size:36px;margin:10px 0;color:var(--color3);'>Education</h1>
+					</div>
+				</div>
+				<div class="section-content rgrid--2-3" rid="2">
+					<div class="elements">
+						<p class='at-bold'
+							style='color:var(--color3);border-left:1px #ccc solid;padding:0 20px;margin:0 20px;'>
+							<br>
+							Mazrui International has built a strong portfolio in education with institute like SABIS.
+							<br><br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section hid="5" style="background:#fff;padding:0 50px;">
+			<div class="grid animated fadeInUp" animated="fadeInUp">
+				<div class="section-content rgrid--1-3" rid="1">
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/MES.png);padding-top:100%;width:100%"></div> -->
+						<img src="images/SABISYasIsland_Logo-300x120.png" style="width:100%;" animated='fadeInLeft'>
+					</div>
+				</div>
+				<div class="section-content rgrid--1-3" rid="2">
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/pf13.jpg);padding-top:100%;"></div> -->
+						<img src="images/ISC_SABIS_Logo-1-300x120.png" style="width:100%;" animated='fadeInDown'>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id='trading' hid='10' style='background:#fff;padding-top:100px;'>
+			<div class="grid" animated='fadeInUp'>
+				<div class="section-content rgrid--1-3" rid="1">
+					<div class="elements at-left" desktop='at-right' style='padding-left:20px;'>
+						<h1 class='' style='font-size:36px;margin:10px 0;color:var(--color3);'>Trading</h1>
+					</div>
+				</div>
+				<div class="section-content rgrid--2-3" rid="2">
+					<div class="elements">
+						<p class='at-bold'
+							style='color:var(--color3);border-left:1px #ccc solid;padding:0 20px;margin:0 20px;'>
+							Since the seventies, MAZRUI International has helped create clarity and covetability for
+							businesses and brands through its retail and distribution divisions. This family run group
+							responds to each new alliance with a keen understanding of business objectives, providing
+							partners with a unique Middle Eastern perspective, agile thinking and brand management
+							excellence.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section hid="5" style="background:#fff;padding:0 50px;" class="at-line-bottom">
+			<div class="grid animated fadeInUp" animated="fadeInUp">
+				<div class="section-content rgrid--1-3" rid="1">
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/MES.png);padding-top:100%;width:100%"></div> -->
+						<img src="images/tic_logo_land-1.png" style="width:100%;" animated='fadeInLeft'>
+					</div>
+				</div>
+				<div class="section-content rgrid--1-3" rid="2">
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/pf13.jpg);padding-top:100%;"></div> -->
+						<img src="images/SEP-300x120.png" style="width:100%;" animated='fadeInDown'>
+					</div>
+				</div>
+				<div class="section-content rgrid--1-3" rid="2">
+					<div class="elements img-zoom-parent">
+						<!-- <div class="img-zoom-child img-preview-icon" style="background-image: url(images/pf13.jpg);padding-top:100%;"></div> -->
+						<img src="images/METROMED-300x120.png" style="width:100%;" animated='fadeInRight'>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id='careers' hid='6' style='background:#fff;padding:50px;padding-top:50px;'>
+			<div class="section-content grid--full" rid="1">
+				<div class="elements at-center">
+					<h1 class='' style='color:var(--color2);font-size:36px;margin:10px 0;'>WHY MAZRUI INTERNATIONAL</h1>
+					<p style='color:var(--color3);'>That’s how Mazrui International manages and nurtures talent. We
+						don’t
+						just provide jobs, we develop careers. Our work environment encourages
+						entrepreneurship and innovation thanks to a diverse pool of professionals of more than 25
+						nationalities, a team-oriented culture and our
+						commitment to excellence.
+						<br><br>
+						We distinguish ourselves in the way we unleash and enhance the potential of our employees. This
+						means that we:</p>
+				</div>
+			</div>
+		</section>
+		<section hid='3' class='at-line-bottom' style='background:#fff;padding:10px 30px;'>
+			<div class="grid">
+				<div class="section-content rgrid--1-3" rid="1" animated='fadeInLeft'>
+					<div class="elements at-center" style='padding:0 10px'>
+						<i class="fn-scroll fa fa-unlock fa-2x" href="#about"
+							style='width: 60px;height: 60px;color:var(--color2);border: 1px solid var(--color2);line-height: 60px;border-radius: 50%;'></i>
+						<div class='at-bold' style='font-size:24px;color:var(--color3);padding:10px 0;'>UNLOCK</div>
+						<p style='color:var(--color3);'>We tap your potential consistent with and
+							aligned to your interests and capabilities.
+							In the process, you will gain a better
+							understanding and appreciation of your
+							talents, strengths and potential to
+							succeed.</p>
+					</div><br><br>
+				</div>
+				<div class="section-content rgrid--1-3" rid="2" animated='fadeInDown'>
+					<div class="elements at-center" style='padding:0 10px'>
+						<i class="fn-scroll fa fa-line-chart fa-2x" href="#about"
+							style='width: 60px;height: 60px;color:var(--color2);border: 1px solid var(--color2);line-height: 60px;border-radius: 50%;'></i>
+						<div class='at-bold' style='font-size:24px;color:var(--color3);padding:10px 0'>GROW</div>
+						<p style='color:var(--color3);'>We offer learning and development
+							opportunities to develop and hone your skills.
+							Our range of training courses and development programs ensure that you will continually
+							develop
+							and expand your skill set.</p>
+					</div>
+					<br><br>
+				</div>
+				<div class="section-content rgrid--1-3" rid="3" animated='fadeInRight'>
+					<div class="elements at-center" style='padding:0 10px'>
+						<i class="fn-scroll fa fa-handshake-o fa-2x" href="#about"
+							style='width: 60px;height: 60px;color:var(--color2);border: 1px solid var(--color2);line-height: 60px;border-radius: 50%;'></i>
+						<div class='at-bold' style='font-size:24px;color:var(--color3);padding:10px 0'>LEAD</div>
+						<p style='color:var(--color3);'>We strengthen your leadership and decision-making skills by
+							empowering you to have a tangible impact on the business. This on-the-job experience is
+							complemented by our Leadership Development Programs. You will gain the confidence and
+							business
+							acumen that will propel you throughout your career.</p>
+					</div><br><br>
+				</div>
+			</div>
+			<br><br>
+			<div animated='fadeInUp'>
+				<p class="at-center" style='color:var(--color3);'>If you are looking for a challenging and engaging work
+					environment to launch and develop your career, think <b>Mazrui International</b>.
+					<br>To search for opportunities in Mazrui International, click here or send your updated resume to
+					<a href="mailto:careers@mazruiinternational.ae" target="_top">careers@mazruiinternational.ae</a>
+				</p>
+			</div>
+			<div id='contact'></div>
+		</section>
+
+		<section id='contact' hid='10' style='background:#fff;padding-top:50px;'>
+			<div class="grid" animated='fadeInUp'>
+				<div class="section-content rgrid--1-3" rid="1">
+					<div class="elements at-left" desktop='at-left' style='padding-left:20px;'>
+						<h1 class='' style='font-size:36px;margin:10px 0;color:var(--color3);'>OUR OFFICE</h1>
+
+						<div class="grid">
+							<div style="padding-left:30px;color:#666;position:relative;"> <i class="fa fa-map-marker"
+									style="position: absolute;top:0;left:0;font-size:20px;"></i> 7th Floor, Tower 3,
+								Mazyad
+								Mall, Mohamed Bin Zayed City, Abu Dhabi, U.A.E.<br><br></div>
+							<div style="padding-left:30px;color:#666;position:relative;"> <i class="fa fa-envelope"
+									style="position: absolute;top:0;left:0;font-size:20px;"></i> <a
+									href="mailto:careers@mazruiinternational.ae"
+									target="_top">careers@mazruiinternational.ae</a></div><br><br>
+							<div style="padding-left:30px;color:#666;position:relative;"> <i class="fa fa-phone"
+									style="position: absolute;top:0;left:0;font-size:20px;"></i> <a
+									href="tel:+97125139000" target="_top">Tel: +971 2 5139000</a><br> Fax: +971 2
+								5591955</div><br><br>
+						</div>
+					</div>
+				</div>
+				<div class="section-content rgrid--2-3" rid="2">
+					<div class="elements" style="margin-right:50px;margin-bottom:50px;">
+						<div class="col-sm-8">
+							<div class="mobileLayout">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3634.2368451824386!2d54.536306314513965!3d24.373062870621872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e4723814e3e17%3A0x6c171d13f7deb385!2sMazrui+International+L.L.C.!5e0!3m2!1sen!2s!4v1453888813322"
+									width="100%" height="350" frameborder="0" style="border:0;"
+									allowfullscreen=""></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id='signup' hid='13' style='background:var(--color2);padding-top:80px;'>
+			<div class="grid" animated='rotateInUpRight'>
+				<div class="section-content grid--full" rid="1"
+					style='background:var(--color2);width:100%;max-width:500px;margin:auto;padding-bottom:50px;'>
+					<div class='elements at-left' style='padding:0 20px;margin-bottom:50px;'>
+						<h1 class='' style='color:#fff;font-size:36px;margin-bottom:0;'>Get in Touch</h1>
+						<input type="text" class="form-control" name="name" placeholder="Your Name..." required="">
+						<input type="text" class="form-control" name="phone" placeholder="Phone" required="">
+						<input type="email" class="form-control" name="email" placeholder="Your Email Address"
+							required="">
+						<textarea class="form-control" name="message" rows="5" placeholder="Your Message"></textarea>
+						<button class='signup'
+							style='color:#fff;background:#333;border:.5px solid #aaa;padding:10px 50px;margin-top:50px;border-radius:20px;'>Send
+							message</button>
+
+					</div>
+					<style>
+						#social i:hover {
+							background: #fff;
+							color: var(--color2);
+						}
+					</style>
+					<div id="social" class="section-content grid--full" rid="1"
+						style="width:100%;max-width:500px;margin:auto;padding-bottom:20px;">
+						<div class="elements at-center" style="padding:0 20px;">
+							<ul class="at-style-inline ">
+								<li><a href="https://www.linkedin.com/company/mazrui-international?trk=top_nav_home"
+										target="blank"><i class="fa fa-linkedin fa-2x at-color1"
+											style="font-size:24px;padding:15px 16px;border: 2px solid #fff;border-radius: 50%;"></i></a>
+								</li>
+								<li><a href="https://twitter.com/mazrui"><i class="fa fa-twitter fa-2x at-color1"
+											style="font-size:24px;padding:15px;border: 2px solid #fff;border-radius: 50%;"></i></a>
+								</li>
+								<li><a href="https://plus.google.com/+MazruiInternationalLLCAbuDhabi" target="blank"><i
+											class="fa fa-google-plus fa-2x at-color1"
+											style="font-size:24px;padding:15px 11px;border: 2px solid #fff;border-radius: 50%;"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="section-content grid--full" rid="2" style='background:var(--color2);width:100%;'>
+						<div class="elements at-center ">
+							<div style='font-size:25px;font-weight:800;color:#fff;padding-top:30px;'>AvT Design</div>
+							<div style='font-size:15px; color:#aaa;padding:20px;'>Made with <i class="fa fa-heart"
+									style='color:red;'></i> by AVTividad 2019. All Rights Reserved</div>
+							<a id="scroll-top" class="fn-scroll fa fa-long-arrow-up at-zoom" href="#home"
+								style='width: 35px;height: 35px;margin:auto;color:#fff;border: 2px solid #fff;line-height: 35px;border-radius: 50%;'></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <a id="scroll-top" class="fn-scroll fa fa-long-arrow-up at-zoom" href="#home"
+			style="box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px; text-shadow: rgb(255, 255, 255) -1px -1px 0px; position: fixed; bottom: 20px; right: 20px; width: 35px; height: 35px; margin: auto; color: var(--color2); border: 2px solid var(--color2); line-height: 35px; border-radius: 50%; z-index: 1;"></a>
+	  -->
+		<!-- 
+	<footer style='padding:0;margin:0;background:#555;'>	
+		<div class="grid">
+			<div class="section-content grid--full" rid="1" style='background:#000;width:100%;'>				
+				<div class="elements at-center ">
+					<a class="fn-scroll fa fa-long-arrow-up at-zoom" href="#home" style='width: 35px;height: 35px;margin:60px auto;color:#fff;border: 2px solid #fff;line-height: 35px;border-radius: 50%;'></a>
+				</div>
+			</div>
+		</div>
+	</footer> 
+	-->
+</body>
+
+</html>
+
+<!-- <script src='https://www.upstint.com/assets/js/avt-common.js?v0.02'></script> -->
+<script src='/assets/js/avt-common.js?v0.02'></script>
+
+<!-- <script>
+
+		// The function actually applying the offset
+	function offsetAnchor() {
+		if(location.hash.length !== 0) {
+		}
+			window.scrollTo(window.scrollX, window.scrollY + 500);
+	}
+
+	// This will capture hash changes while on the page
+	window.addEventListener("hashchange", offsetAnchor);
+
+	// This is here so that when you enter the page with a hash,
+	// it can provide the offset in that case too. Having a timeout
+	// seems necessary to allow the browser to jump to the anchor first.
+	window.setTimeout(offsetAnchor, 1); // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
+	
+	
+</script>
+-->
+
+<script>
+	$('#management .management').click(function () {
+		$('.modal .team-img-area').html($(this).html());
+		$('.modal').show();
+		// alert($(this).html());
+	});
+	$('.modal-close, .modal').click(function () {
+		$('.modal').hide();
+
+	});
+</script>
+
+<script>
+	$('.slide-show').owlCarousel({
+		loop: true,
+		// autoplay: true,
+		//autoplayTimeout: 2000,
+		//autoplayHoverPause: true,
+		items: 3,
+		nav: true,
+		navText: ["<i class='fa fa-angle-left fa-3x' style='color:var(--chevron-color);-webkit-text-stroke: 2px var(--chevron-bcolor);'></i>", "<i class='fa fa-angle-right fa-3x' style='color:var(--chevron-color);-webkit-text-stroke: 2px var(--chevron-bcolor);'></i>"],
+		loop: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 2
+			},
+			800: {
+				items: 3
+			},
+			1000: {
+				items: 4
+			}
+		}
+
+	});
+	$('#slide-show2').owlCarousel({
+		loop: true,
+		autoplay: true,
+		autoplayTimeout: 2000,
+		//autoplayHoverPause: true,
+		items: 1,
+		nav: true,
+		navText: ["<i class='fa fa-angle-left fa-4x' style='color:var(--chevron-color);-webkit-text-stroke: 2px rgba(0,0,0,.5);'></i>", "<i class='fa fa-angle-right fa-4x' style='color:var(--chevron-color);-webkit-text-stroke: 2px rgba(0,0,0,.5);'></i>"],
+		loop: true,
+	});
+	$('.feature-me').click(function () {
+		alert('>>>>');
+	});
+
+</script>
